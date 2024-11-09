@@ -1,0 +1,23 @@
+.rectangle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 12svh;
+    transform: translateX(-50%);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.readMore:hover .hover-text {
+    transition: all 0.3s;
+    display: flex;
+}
